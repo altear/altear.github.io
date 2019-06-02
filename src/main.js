@@ -1,4 +1,5 @@
 import style from "./style.scss";
+import "bootstrap";
 
 function foo() {
   var el = document.createElement("div");
