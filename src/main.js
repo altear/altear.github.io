@@ -1,10 +1,10 @@
+import style from "./style.scss";
+
 function foo() {
   var el = document.createElement("div");
   el.innerHTML = "Hello world!";
+  el.className = style.firstStyle;
   return el;
 }
 
-foo = () => {
-  [0, 1, 2].forEach(x => x + 1);
-};
 document.body.appendChild(foo());

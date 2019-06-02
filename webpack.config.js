@@ -1,5 +1,6 @@
 const path = require("path");
 const webpack = require("webpack");
+const Fiber = require("fibers"); // Allows for synchronous compilation- makes things compile much faster
 
 module.exports = {
   mode: "development",
@@ -22,6 +23,24 @@ module.exports = {
             presets: ["@babel/preset-env"]
           }
         }
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          {
+            loader: "style-loader"
+          },
+          {
+            loader: "css-loader"
+          },
+          {
+            loader: "sass-loader",
+            options: {
+              implementation: require("sass"),
+              fiber: Fiber
+            }
+          }
+        ]
       }
     ]
   },
