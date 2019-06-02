@@ -39,6 +39,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
+    "@barba/core": "^2.3.9",
     "autoprefixer": "^9.5.1",
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
