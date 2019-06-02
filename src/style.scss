@@ -1,4 +1,6 @@
-.firstStyle {
-  color: yellow;
-  background-color: red;
+:local {
+  .firstStyle {
+    color: yellow;
+    background-color: red;
+  }
 }

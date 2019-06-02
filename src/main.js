@@ -4,6 +4,7 @@ function foo() {
   var el = document.createElement("div");
   el.innerHTML = "Hello world!";
   el.className = style.firstStyle;
+  console.log(style.firstStyle);
   return el;
 }
 
