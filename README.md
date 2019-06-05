@@ -1,13 +1,13 @@
 ## Stack
 
-- webpack: bundles everything
+-   webpack: bundles everything
 
-  - babel-loader: compiles next-gen js into browser compatible
-  - sass-loader: compile sass to css
-  - css-loader: allows js to import css
-  - style-loader: css exports to styles
+    -   babel-loader: compiles next-gen js into browser compatible
+    -   sass-loader: compile sass to css
+    -   css-loader: allows js to import css
+    -   style-loader: css exports to styles
 
-- Bootstrap: mobile first UI framework/libraries
+-   Bootstrap: mobile first UI framework/libraries
 
 ### Classes
 

@@ -1,11 +1,11 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 h1 {
-  color: fuchsia;
+    color: fuchsia;
 }
 :local {
-  .firstStyle {
-    color: yellow;
-    background-color: fuchsia;
-  }
+    .firstStyle {
+        color: yellow;
+        background-color: fuchsia;
+    }
 }
