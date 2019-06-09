@@ -1,5 +1,86 @@
+:global {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .page {
+        overflow: hidden;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .hello {
+        color: yellow;
+        background-color: magenta;
+
+        h1 {
+            font-family: "Calligraffitti", cursive;
+            font-size: 10em;
+            margin: 0;
+            padding: 0;
+        }
+
+        .scroll-down {
+            @triangle_width: 40px;
+            @triangle_height: 30px;
+            position: absolute;
+            top: 80vh;
+
+            // Triangle
+            width: 0;
+            height: 0;
+            border-left: @triangle_width solid transparent;
+            border-right: @triangle_width solid transparent;
+            border-top: @triangle_height solid yellow;
+
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+
+            top: 80vh;
+            opacity: 0.1;
+            :local {
+                animation-name: example;
+                @keyframes example {
+                    50% {
+                        top: 85vh;
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+    }
+
+    .whoami {
+        color: fuchsia;
+        background-color: cyan;
+        font-size: 3em;
+
+        .box {
+            padding: 1em;
+            border: 1px solid fuchsia;
+            height: 100px;
+        }
+
+        .box::after {
+            content: "";
+            position: absolute;
+            display: block;
+            opacity: 1;
+            top: 130vh;
+            left: 50px;
+            height: 100px;
+            width: 100px;
+            background-color: black;
+        }
+    }
+}
+
 :local {
     .myClass {
-        color: red;
+        color: orange;
     }
 }
