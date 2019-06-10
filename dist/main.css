@@ -11,8 +11,8 @@ body {
   flex-direction: column;
 }
 .hello {
-  color: yellow;
-  background-color: magenta;
+  color: #ffff66;
+  background-color: fuchsia;
 }
 .hello h1 {
   font-family: "Calligraffitti", cursive;
@@ -42,25 +42,34 @@ body {
   }
 }
 .whoami {
-  color: fuchsia;
-  background-color: cyan;
+  color: DodgerBlue;
+  background-color: #ccffff;
   font-size: 3em;
+  font-family: "Raleway", sans-serif;
 }
 .whoami .box {
   padding: 1em;
-  border: 1px solid fuchsia;
+  border: 2px dashed dodgerblue;
+}
+.whoami #laptop {
+  width: 150px;
   height: 100px;
 }
-.whoami .box::after {
-  content: "";
-  position: absolute;
-  display: block;
-  opacity: 1;
-  top: 130vh;
-  left: 50px;
-  height: 100px;
-  width: 100px;
-  background-color: black;
+.whoami .svg-animate {
+  stroke-dasharray: 2566;
+  stroke-opacity: 0.5;
+  stroke-dashoffset: 2566;
+}
+.whoami .svg-animate {
+  animation: styles__cloud___205HA 8s linear alternate infinite;
+}
+@keyframes styles__cloud___205HA {
+  from {
+    stroke-dashoffset: 2000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 .styles__myClass___1cTSu {
   color: orange;

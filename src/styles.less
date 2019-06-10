@@ -14,8 +14,8 @@
     }
 
     .hello {
-        color: yellow;
-        background-color: magenta;
+        color: lighten(yellow, 20%);
+        background-color: fuchsia;
 
         h1 {
             font-family: "Calligraffitti", cursive;
@@ -55,26 +55,36 @@
     }
 
     .whoami {
-        color: fuchsia;
-        background-color: cyan;
+        color: DodgerBlue;
+        background-color: lighten(cyan, 40%);
         font-size: 3em;
+        font-family: "Raleway", sans-serif;
 
         .box {
             padding: 1em;
-            border: 1px solid fuchsia;
-            height: 100px;
+            border: 2px dashed dodgerblue;
         }
 
-        .box::after {
-            content: "";
-            position: absolute;
-            display: block;
-            opacity: 1;
-            top: 130vh;
-            left: 50px;
+        #laptop {
+            width: 150px;
             height: 100px;
-            width: 100px;
-            background-color: black;
+        }
+        .svg-animate {
+            stroke-dasharray: 2566;
+            stroke-opacity: 0.5;
+            stroke-dashoffset: 2566;
+
+            :local {
+                animation: cloud 8s linear alternate infinite;
+                @keyframes cloud {
+                    from {
+                        stroke-dashoffset: 2000;
+                    }
+                    to {
+                        stroke-dashoffset: 0;
+                    }
+                }
+            }
         }
     }
 }

@@ -1,0 +1,32 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 653.56 504.04">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-1, .cls-4 {
+        stroke: #999;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #000;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>laptop</title>
+  <rect class="cls-1" x="168.56" y="18" width="465" height="300"/>
+  <rect class="cls-2" x="150.56" y="2" width="501" height="332"/>
+  <polyline class="cls-3" points="150.56 334 4.56 487 598.56 502 651.56 334"/>
+  <polyline class="cls-4" points="217.56 474 269.56 413 445.56 417 413.56 480 217.56 474"/>
+  <polygon class="cls-1" points="156.56 342 628.56 342 600.56 406 104.56 398 156.56 342"/>
+</svg>
