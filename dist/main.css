@@ -12,7 +12,7 @@ body {
 }
 .hello {
   color: #ffff66;
-  background-color: fuchsia;
+  background-color: #ff99ff;
 }
 .hello h1 {
   font-family: "Calligraffitti", cursive;
@@ -51,27 +51,246 @@ body {
   padding: 1em;
   border: 2px dashed dodgerblue;
 }
-.whoami #laptop {
-  width: 150px;
-  height: 100px;
+.whoami h1, .whoami h4 {
+  padding: 0;
+  margin: 0;
 }
-.whoami .svg-animate {
-  stroke-dasharray: 2566;
-  stroke-opacity: 0.5;
-  stroke-dashoffset: 2566;
+.m1 {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  stroke-width: 12px;
+  stroke: #FFF;
 }
-.whoami .svg-animate {
-  animation: styles__cloud___205HA 8s linear alternate infinite;
+.m1 {
+  animation: styles__cloud___205HA 4s ease-out alternate infinite;
 }
 @keyframes styles__cloud___205HA {
   from {
-    stroke-dashoffset: 2500;
+    stroke-dashoffset: 300;
   }
   to {
     stroke-dashoffset: 0;
   }
 }
-.styles__myClass___1cTSu {
-  color: orange;
+.m2 {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  stroke-width: 12px;
+  stroke: #FFF;
+}
+.m2 {
+  animation: styles__cloud___205HA 4s ease-out alternate infinite;
+}
+@keyframes styles__cloud___205HA {
+  from {
+    stroke-dashoffset: 300;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.m3 {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  stroke-width: 12px;
+  stroke: #FFF;
+}
+.m3 {
+  animation: styles__cloud___205HA 4s ease-out alternate infinite;
+}
+@keyframes styles__cloud___205HA {
+  from {
+    stroke-dashoffset: 300;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.m4 {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  stroke-width: 12px;
+  stroke: #FFF;
+}
+.m4 {
+  animation: styles__cloud___205HA 4s ease-out alternate infinite;
+}
+@keyframes styles__cloud___205HA {
+  from {
+    stroke-dashoffset: 300;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.m5 {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  stroke-width: 12px;
+  stroke: #FFF;
+}
+.m5 {
+  animation: styles__cloud___205HA 4s ease-out alternate infinite;
+}
+@keyframes styles__cloud___205HA {
+  from {
+    stroke-dashoffset: 300;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.m6 {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  stroke-width: 12px;
+  stroke: #FFF;
+}
+.m6 {
+  animation: styles__cloud___205HA 4s ease-out alternate infinite;
+}
+@keyframes styles__cloud___205HA {
+  from {
+    stroke-dashoffset: 300;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.m7 {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  stroke-width: 12px;
+  stroke: #FFF;
+}
+.m7 {
+  animation: styles__cloud___205HA 4s ease-out alternate infinite;
+}
+@keyframes styles__cloud___205HA {
+  from {
+    stroke-dashoffset: 300;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.m8 {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  stroke-width: 12px;
+  stroke: #FFF;
+}
+.m8 {
+  animation: styles__cloud___205HA 4s ease-out alternate infinite;
+}
+@keyframes styles__cloud___205HA {
+  from {
+    stroke-dashoffset: 300;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.m9 {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  stroke-width: 12px;
+  stroke: #FFF;
+}
+.m9 {
+  animation: styles__cloud___205HA 4s ease-out alternate infinite;
+}
+@keyframes styles__cloud___205HA {
+  from {
+    stroke-dashoffset: 300;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.m10 {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  stroke-width: 12px;
+  stroke: #FFF;
+}
+.m10 {
+  animation: styles__cloud___205HA 4s ease-out alternate infinite;
+}
+@keyframes styles__cloud___205HA {
+  from {
+    stroke-dashoffset: 300;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.m11 {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  stroke-width: 12px;
+  stroke: #FFF;
+}
+.m11 {
+  animation: styles__cloud___205HA 4s ease-out alternate infinite;
+}
+@keyframes styles__cloud___205HA {
+  from {
+    stroke-dashoffset: 300;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.m12 {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  stroke-width: 12px;
+  stroke: #FFF;
+}
+.m12 {
+  animation: styles__cloud___205HA 4s ease-out alternate infinite;
+}
+@keyframes styles__cloud___205HA {
+  from {
+    stroke-dashoffset: 300;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.m13 {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  stroke-width: 12px;
+  stroke: #FFF;
+}
+.m13 {
+  animation: styles__cloud___205HA 4s ease-out alternate infinite;
+}
+@keyframes styles__cloud___205HA {
+  from {
+    stroke-dashoffset: 300;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.m14 {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  stroke-width: 12px;
+  stroke: #FFF;
+}
+.m14 {
+  animation: styles__cloud___205HA 4s ease-out alternate infinite;
+}
+@keyframes styles__cloud___205HA {
+  from {
+    stroke-dashoffset: 300;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
