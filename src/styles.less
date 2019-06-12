@@ -15,7 +15,7 @@
 
     .hello {
         color: lighten(yellow, 20%);
-        background-color: fuchsia;
+        background-color: lighten(fuchsia, 30%);
 
         h1 {
             font-family: "Calligraffitti", cursive;
@@ -64,33 +64,31 @@
             padding: 1em;
             border: 2px dashed dodgerblue;
         }
-
-        #laptop {
-            width: 150px;
-            height: 100px;
+        
+        h1,h4 {
+            padding: 0;
+            margin:0;
         }
-        .svg-animate {
-            stroke-dasharray: 2566;
-            stroke-opacity: 0.5;
-            stroke-dashoffset: 2566;
 
+    }
+
+    each(range(14),{
+        .m@{value} {
+            stroke-dasharray: 300; 
+            stroke-dashoffset: 300; 
+            stroke-width: 12px;
+            stroke: #FFF;
+            
             :local {
-                animation: cloud 8s linear alternate infinite;
+                animation: cloud 4s ease-out alternate infinite; 
                 @keyframes cloud {
                     from {
-                        stroke-dashoffset: 2500;
-                    }
-                    to {
+                        stroke-dashoffset: 300;
+                    } to {
                         stroke-dashoffset: 0;
                     }
                 }
             }
         }
-    }
-}
-
-:local {
-    .myClass {
-        color: orange;
-    }
+    });
 }
