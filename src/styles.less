@@ -19,9 +19,14 @@
 
         h1 {
             font-family: "Calligraffitti", cursive;
-            font-size: 10em;
+            font-size: 20vw;
             margin: 0;
             padding: 0;
+        }
+        @media (min-width: 600px) {
+            h1 {
+                font-size: 10em;
+            }
         }
 
         .scroll-down-page1 {
@@ -108,12 +113,12 @@
             animation-iteration-count: infinite;
 
             opacity: 0.1;
-            margin-top: 75vh;
+            margin-top: 70vh;
             :local {
                 animation-name: scroll-down-page2-animation;
                 @keyframes scroll-down-page2-animation {
                     50% {
-                        margin-top: 80vh;
+                        margin-top: 75vh;
                         opacity: 0.8;
                     }
                 }
