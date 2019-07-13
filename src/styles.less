@@ -24,7 +24,7 @@
             padding: 0;
         }
 
-        .scroll-down {
+        .scroll-down-page1 {
             @triangle_width: 40px;
             @triangle_height: 30px;
             position: absolute;
@@ -43,8 +43,8 @@
             top: 80vh;
             opacity: 0.1;
             :local {
-                animation-name: example;
-                @keyframes example {
+                animation-name: scroll-down-page1-animation;
+                @keyframes scroll-down-page1-animation {
                     50% {
                         top: 85vh;
                         opacity: 0.8;
@@ -57,38 +57,67 @@
     .whoami {
         color: DodgerBlue;
         background-color: lighten(cyan, 40%);
-        font-size: 3em;
         font-family: "Raleway", sans-serif;
+        font-size: 6vw;
+        
+        .container {
+            text-align: center;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            justify-content: space-between;
+            padding-top: 100px;
+            padding-bottom: 30vh;
+        }
+        
 
         .box {
             padding: 1em;
             border: 2px dashed dodgerblue;
         }
         
-        h1,h4 {
+        h1 {
             padding: 0;
-            margin:0;
+            margin: 0;
+            font-size: 10vw;
+        }
+        
+        @media (min-width: 600px) {
+            font-size: 1.5em;
+            h1 {
+                font-size: 2em;
+            }
         }
 
-    }
+        .scroll-down-page2 {
+            @triangle_width: 40px;
+            @triangle_height: 30px;
+            position: absolute;
 
-    each(range(14),{
-        .m@{value} {
-            stroke-dasharray: 300; 
-            stroke-dashoffset: 300; 
-            stroke-width: 12px;
-            stroke: #FFF;
-            
+            // Triangle
+            width: 0;
+            height: 0;
+            border-left: @triangle_width solid transparent;
+            border-right: @triangle_width solid transparent;
+            border-top: @triangle_height solid dodgerblue;
+
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+
+            opacity: 0.1;
+            margin-top: 75vh;
             :local {
-                animation: cloud 4s ease-out alternate infinite; 
-                @keyframes cloud {
-                    from {
-                        stroke-dashoffset: 300;
-                    } to {
-                        stroke-dashoffset: 0;
+                animation-name: scroll-down-page2-animation;
+                @keyframes scroll-down-page2-animation {
+                    50% {
+                        margin-top: 80vh;
+                        opacity: 0.8;
                     }
                 }
             }
         }
-    });
+    }
 }

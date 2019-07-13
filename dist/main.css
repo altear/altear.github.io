@@ -20,7 +20,7 @@ body {
   margin: 0;
   padding: 0;
 }
-.hello .scroll-down {
+.hello .scroll-down-page1 {
   position: absolute;
   width: 0;
   height: 0;
@@ -32,10 +32,10 @@ body {
   top: 80vh;
   opacity: 0.1;
 }
-.hello .scroll-down {
-  animation-name: styles__example___347bB;
+.hello .scroll-down-page1 {
+  animation-name: styles__scroll-down-page1-animation___1t0e_;
 }
-@keyframes styles__example___347bB {
+@keyframes styles__scroll-down-page1-animation___1t0e_ {
   50% {
     top: 85vh;
     opacity: 0.8;
@@ -44,253 +44,57 @@ body {
 .whoami {
   color: DodgerBlue;
   background-color: #ccffff;
-  font-size: 3em;
   font-family: "Raleway", sans-serif;
+  font-size: 6vw;
+}
+.whoami .container {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  padding-top: 100px;
+  padding-bottom: 30vh;
 }
 .whoami .box {
   padding: 1em;
   border: 2px dashed dodgerblue;
 }
-.whoami h1, .whoami h4 {
+.whoami h1 {
   padding: 0;
   margin: 0;
+  font-size: 10vw;
 }
-.m1 {
-  stroke-dasharray: 300;
-  stroke-dashoffset: 300;
-  stroke-width: 12px;
-  stroke: #FFF;
-}
-.m1 {
-  animation: styles__cloud___205HA 4s ease-out alternate infinite;
-}
-@keyframes styles__cloud___205HA {
-  from {
-    stroke-dashoffset: 300;
+@media (min-width: 600px) {
+  .whoami {
+    font-size: 1.5em;
   }
-  to {
-    stroke-dashoffset: 0;
+  .whoami h1 {
+    font-size: 2em;
   }
 }
-.m2 {
-  stroke-dasharray: 300;
-  stroke-dashoffset: 300;
-  stroke-width: 12px;
-  stroke: #FFF;
+.whoami .scroll-down-page2 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 30px solid dodgerblue;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  opacity: 0.1;
+  margin-top: 75vh;
 }
-.m2 {
-  animation: styles__cloud___205HA 4s ease-out alternate infinite;
+.whoami .scroll-down-page2 {
+  animation-name: styles__scroll-down-page2-animation___1HUBK;
 }
-@keyframes styles__cloud___205HA {
-  from {
-    stroke-dashoffset: 300;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-.m3 {
-  stroke-dasharray: 300;
-  stroke-dashoffset: 300;
-  stroke-width: 12px;
-  stroke: #FFF;
-}
-.m3 {
-  animation: styles__cloud___205HA 4s ease-out alternate infinite;
-}
-@keyframes styles__cloud___205HA {
-  from {
-    stroke-dashoffset: 300;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-.m4 {
-  stroke-dasharray: 300;
-  stroke-dashoffset: 300;
-  stroke-width: 12px;
-  stroke: #FFF;
-}
-.m4 {
-  animation: styles__cloud___205HA 4s ease-out alternate infinite;
-}
-@keyframes styles__cloud___205HA {
-  from {
-    stroke-dashoffset: 300;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-.m5 {
-  stroke-dasharray: 300;
-  stroke-dashoffset: 300;
-  stroke-width: 12px;
-  stroke: #FFF;
-}
-.m5 {
-  animation: styles__cloud___205HA 4s ease-out alternate infinite;
-}
-@keyframes styles__cloud___205HA {
-  from {
-    stroke-dashoffset: 300;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-.m6 {
-  stroke-dasharray: 300;
-  stroke-dashoffset: 300;
-  stroke-width: 12px;
-  stroke: #FFF;
-}
-.m6 {
-  animation: styles__cloud___205HA 4s ease-out alternate infinite;
-}
-@keyframes styles__cloud___205HA {
-  from {
-    stroke-dashoffset: 300;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-.m7 {
-  stroke-dasharray: 300;
-  stroke-dashoffset: 300;
-  stroke-width: 12px;
-  stroke: #FFF;
-}
-.m7 {
-  animation: styles__cloud___205HA 4s ease-out alternate infinite;
-}
-@keyframes styles__cloud___205HA {
-  from {
-    stroke-dashoffset: 300;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-.m8 {
-  stroke-dasharray: 300;
-  stroke-dashoffset: 300;
-  stroke-width: 12px;
-  stroke: #FFF;
-}
-.m8 {
-  animation: styles__cloud___205HA 4s ease-out alternate infinite;
-}
-@keyframes styles__cloud___205HA {
-  from {
-    stroke-dashoffset: 300;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-.m9 {
-  stroke-dasharray: 300;
-  stroke-dashoffset: 300;
-  stroke-width: 12px;
-  stroke: #FFF;
-}
-.m9 {
-  animation: styles__cloud___205HA 4s ease-out alternate infinite;
-}
-@keyframes styles__cloud___205HA {
-  from {
-    stroke-dashoffset: 300;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-.m10 {
-  stroke-dasharray: 300;
-  stroke-dashoffset: 300;
-  stroke-width: 12px;
-  stroke: #FFF;
-}
-.m10 {
-  animation: styles__cloud___205HA 4s ease-out alternate infinite;
-}
-@keyframes styles__cloud___205HA {
-  from {
-    stroke-dashoffset: 300;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-.m11 {
-  stroke-dasharray: 300;
-  stroke-dashoffset: 300;
-  stroke-width: 12px;
-  stroke: #FFF;
-}
-.m11 {
-  animation: styles__cloud___205HA 4s ease-out alternate infinite;
-}
-@keyframes styles__cloud___205HA {
-  from {
-    stroke-dashoffset: 300;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-.m12 {
-  stroke-dasharray: 300;
-  stroke-dashoffset: 300;
-  stroke-width: 12px;
-  stroke: #FFF;
-}
-.m12 {
-  animation: styles__cloud___205HA 4s ease-out alternate infinite;
-}
-@keyframes styles__cloud___205HA {
-  from {
-    stroke-dashoffset: 300;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-.m13 {
-  stroke-dasharray: 300;
-  stroke-dashoffset: 300;
-  stroke-width: 12px;
-  stroke: #FFF;
-}
-.m13 {
-  animation: styles__cloud___205HA 4s ease-out alternate infinite;
-}
-@keyframes styles__cloud___205HA {
-  from {
-    stroke-dashoffset: 300;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-.m14 {
-  stroke-dasharray: 300;
-  stroke-dashoffset: 300;
-  stroke-width: 12px;
-  stroke: #FFF;
-}
-.m14 {
-  animation: styles__cloud___205HA 4s ease-out alternate infinite;
-}
-@keyframes styles__cloud___205HA {
-  from {
-    stroke-dashoffset: 300;
-  }
-  to {
-    stroke-dashoffset: 0;
+@keyframes styles__scroll-down-page2-animation___1HUBK {
+  50% {
+    margin-top: 80vh;
+    opacity: 0.8;
   }
 }
 
