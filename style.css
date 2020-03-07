@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;
+}
+
+.page:first-child {
+    background-color: rgba(0,0,0,1);
+}
+
+.square-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0,0,0,0.2);
+}
+
+.square-grid > * {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.whoami {
+    color: yellow;
+    letter-spacing: 0.15em;
+}
+
+@keyframes noise-anim {
+    0% {clip-path:inset(100% 100%);}
+    70% {clip-path:inset(100% 100%);}
+    75% {
+      clip-path: inset(40% 0 61% 0);
+    }
+    80% {
+      clip-path: inset(92% 0 1% 0);
+    }
+    85% {
+      clip-path: inset(43% 0 1% 0);
+    }
+    90% {
+      clip-path: inset(25% 0 58% 0);
+    }
+    95% {
+      clip-path: inset(54% 0 7% 0);
+    }
+    100% {
+      clip-path: inset(58% 0 43% 0);
+    }
+  }
+.glitch {
+    position: relative;
+}
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+}
+.glitch {
+    padding: 5px;
+    position: relative;
+}
+.glitch::before {
+    left: 2px;
+    text-shadow: -1px 0 red;
+    background: black;
+    animation: noise-anim 4s infinite steps(20) alternate-reverse;
+}
+.glitch::after {
+    right: -2px;
+    text-shadow: -1px 0 blue;
+    background: black;
+    animation: noise-anim 4s infinite 0.5s steps(20) alternate-reverse;
+}
+
+
+@keyframes caret-blink {
+    0% { border-color: white; }
+    50% { border-color: rgba(0,0,0,0); }
+}
+
+.intro {
+    left: -1em;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Oxanium', cursive;
+}
+
+.typing {
+    width: auto;
+    display: inline-block;
+    color: white;
+    white-space: pre;
+    min-width: 1px;
+    letter-spacing: 0.2em;
+    padding: 0;
+    margin: 0;
+}
+
+.caret {
+    border-right: 0.5em solid white;
+    animation: caret-blink 0.75s step-start infinite forwards
+}
