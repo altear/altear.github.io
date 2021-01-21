@@ -34,6 +34,7 @@ body {
 }
 
 .whoami {
+    text-align: center;
     color: yellow;
     letter-spacing: 0.15em;
 }
@@ -112,9 +113,41 @@ body {
     letter-spacing: 0.2em;
     padding: 0;
     margin: 0;
+    margin-bottom: 5px;
+}
+
+.typing-wrapper{
+  height: 0;
+  overflow-y: visible;
+  
+  width: 0;
+  overflow-x: visible;
 }
 
 .caret {
     border-right: 0.5em solid white;
     animation: caret-blink 0.75s step-start infinite forwards
+}
+
+.header {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  left: 0;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 10px 0;
+  color: white;
+}
+
+.header > a {
+  padding: 0 max(2vw, 10px) 0 max(2vw, 10px);
+  color: inherit;
+}
+
+
+.header > a:hover {
+  transition-duration: 1s;
+  transform: scale(1.2);
 }
