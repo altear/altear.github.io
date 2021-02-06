@@ -139,6 +139,7 @@ body {
 
 @media only screen and (max-width: 600px) {
   .typing-wrapper {
-    width: 400px;
+    width: 300px;
+    font-size: 0.8rem;
   }
 }
