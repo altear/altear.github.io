@@ -5,25 +5,11 @@ body {
 .page {
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 .page:first-child {
     background-color: rgba(0,0,0,1);
-}
-
-.square-grid {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-    width: 100%;
-    height: 100%;
-
-    background-color: rgba(0,0,0,0.2);
-}
-
-.square-grid > * {
-    background-color: rgba(255, 0, 0, 0.2);
 }
 
 .center-content {
@@ -119,7 +105,6 @@ body {
 .typing-wrapper{
   height: 0;
   overflow-y: visible;
-  
   width: 0;
   overflow-x: visible;
 }
@@ -150,4 +135,10 @@ body {
 .header > a:hover {
   transition-duration: 1s;
   transform: scale(1.2);
+}
+
+@media only screen and (max-width: 600px) {
+  .typing-wrapper {
+    width: 400px;
+  }
 }
